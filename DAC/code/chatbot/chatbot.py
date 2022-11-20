@@ -3,7 +3,7 @@ import json
 import pickle
 import numpy as np
 import csv
-from t2s.text_to_speech import say
+from t2s.tex_to_speech import say
 from time import strftime
 
 import nltk
