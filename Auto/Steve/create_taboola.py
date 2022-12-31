@@ -42,7 +42,7 @@ times = 6
 
 # create (times) tab
 alt_tab()
-for i in range(0,times-1):
+for i in range(0,times):
     ctrl_shift_k()
 
 for i in range(1, times+1):

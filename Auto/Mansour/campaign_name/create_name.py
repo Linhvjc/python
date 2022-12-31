@@ -1,6 +1,8 @@
 import pyautogui, sys
 import time
 
+times =8
+
 def ctrl_c():
     pyautogui.keyDown('ctrl')
     pyautogui.keyDown('c')
@@ -32,7 +34,7 @@ def ctrl_tab():
     
 time.sleep(1)
 
-for i in range(0,22):
+for i in range(0,times):
     # Switch tab
     alt_tab()
 
@@ -102,9 +104,12 @@ for i in range(0,22):
 
     # Copy result
     pyautogui.moveTo(662,695)
+    time.sleep(0.5)
     pyautogui.click(button='left')
     pyautogui.click(button='left')
     pyautogui.click(button='left')
+    time.sleep(0.5)
+    ctrl_c()
     ctrl_c()
 
     #Switch tab and paste
@@ -112,10 +117,8 @@ for i in range(0,22):
     for i in range(0,14):
         pyautogui.press('right')
     pyautogui.keyDown('ctrl')
-    pyautogui.keyDown('shift')
     pyautogui.keyDown('v')
     pyautogui.keyUp('ctrl')
-    pyautogui.keyUp('shift')
     pyautogui.keyUp('v')
     
     # remove ''
