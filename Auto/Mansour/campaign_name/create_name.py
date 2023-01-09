@@ -1,7 +1,7 @@
 import pyautogui, sys
 import time
 
-times =8
+times = int(input('times: '))
 
 def ctrl_c():
     pyautogui.keyDown('ctrl')
@@ -26,6 +26,7 @@ def alt_tab():
     pyautogui.keyDown('tab')
     pyautogui.keyUp('alt')
     pyautogui.keyUp('tab')
+    time.sleep(0.7)
 def ctrl_tab():
     pyautogui.keyDown('ctrl')
     pyautogui.keyDown('tab')
@@ -117,18 +118,25 @@ for i in range(0,times):
     for i in range(0,14):
         pyautogui.press('right')
     pyautogui.keyDown('ctrl')
+    pyautogui.keyDown('shift')
     pyautogui.keyDown('v')
     pyautogui.keyUp('ctrl')
+    pyautogui.keyUp('shift')
     pyautogui.keyUp('v')
     
     # remove ''
     pyautogui.press('enter')
     pyautogui.press('backspace')
-    for i in range(0,15):
-        pyautogui.keyDown('ctrl')
-        pyautogui.keyDown('left')
-        pyautogui.keyUp('ctrl')
-        pyautogui.keyUp('left')
+    # for i in range(0,15):
+    #     pyautogui.keyDown('ctrl')
+    #     pyautogui.keyDown('left')
+    #     pyautogui.keyUp('ctrl')
+    #     pyautogui.keyUp('left')
+    pyautogui.keyDown('ctrl')
+    pyautogui.keyDown('home')
+    pyautogui.keyUp('ctrl')
+    pyautogui.keyUp('home')
+    time.sleep(0.5)
     pyautogui.press('delete')
     pyautogui.press('enter')
 
