@@ -12,7 +12,7 @@ def exit_program():
     with keyboard.Listener(on_press=on_press) as listener:
         listener.join()
 
-dict_temp = "D:\Job\Steve\\temp\pe5"
+dict_temp = "D:\\Job\Steve\lemp\p2"
 
 # #! Attorneys
 # dict = 'D:\Job\Steve\Images\Attorneys\CN'
@@ -48,9 +48,13 @@ dict_temp = "D:\Job\Steve\\temp\pe5"
 # dict = "D:\Job\Steve\Images\Laser Liposuction\General"
 # name = '     "P001" "P002" "P003" "P004" "P005" "P006"         '
 
-#! Personal Loans
-dict = 'D:\Job\Steve\Images\Personal Loans\EU'
-name = '"P001" "P002" "P003" "P004" "P005" "P006" "P007" "P008" "P009" "P010"  '
+# #! Personal Loans
+# dict = 'D:\Job\Steve\Images\Personal Loans\EU'
+# name = '"P001" "P002" "P003" "P004" "P005" "P006" "P007" "P008" "P009" "P010"  '
+
+#! PPP Loans
+dict = 'D:/Job/Steve/Images/PPP Loans/US'
+name = '"P001" "P002" "P003" "P004" "P005" "P006" "P007" "P008" "P009" "P010" "P011" "P012"'
 
 # dict = 'D:\Job\Steve\Images\Personal Loans\TH'
 # name = '"P001" "P002" "P003" "P004" "P005" "P006" '
